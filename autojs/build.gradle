@@ -34,6 +34,7 @@ repositories {
         dirs 'libs'
     }
     google()
+    mavenCentral()
 }
 
 dependencies {
@@ -70,5 +71,6 @@ dependencies {
     api files('libs/rhino-1.7.7.2.jar')
     api project(path: ':common')
     api project(path: ':automator')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 

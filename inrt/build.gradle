@@ -101,6 +101,7 @@ repositories {
         dirs 'libs'
     }
     google()
+    mavenCentral()
 }
 
 dependencies {
@@ -116,4 +117,5 @@ dependencies {
     implementation project(':automator')
     implementation project(':common')
     implementation project(':autojs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
